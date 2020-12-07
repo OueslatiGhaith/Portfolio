@@ -268,8 +268,14 @@ img {
 .home__img {
     position: absolute;
     right: 0;
-    bottom: 10rem;
-    width: 295px;
+    bottom: 30rem;
+    width: 285px;
+}
+
+.home__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -513,7 +519,7 @@ contact__button {
     }
     .home__img {
         width: 457px;
-        bottom: 15%;
+        bottom: 80%;
     }
     .about__container,
     .skills__container {
