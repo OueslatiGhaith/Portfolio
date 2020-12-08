@@ -438,7 +438,7 @@ img {
 
 .cards__list::-webkit-scrollbar-thumb {
     background: var(--first-color);
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 .card {
@@ -502,10 +502,12 @@ img {
     font-weight: var(--font-semi);
     padding: 1rem;
     border-radius: .5rem;
-    border: 1.5px solid var(--second-color);
+    border: 1.5px none;
     outline: none;
     margin-bottom: var(--mb-4);
     background-color: var(--background-color);
+    box-shadow: 0 1px 4px var(--shadow-color);
+    color: var(--second-color);
 }
 
 contact__button {
