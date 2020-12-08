@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="light">
     <!-- Header -->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -27,8 +27,11 @@
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#cards" class="nav__link">Cards</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" id="light" class="nav__link">light</a></li>
+                    <li class="nav__item"><a href="#" id="dark" class="nav__link">dark</a></li>
                 </ul>
             </div>
 
@@ -141,7 +144,7 @@
         </section>
 
         <!-- ------------------------------------------ CARDS -------------------------------------->
-        <section class="cards__container section">
+        <section class="cards__container section" id="cards">
             <h2 class="section-title">Cards Test</h2>
 
             <div class="cards__list">
@@ -248,6 +251,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Main JS -->
     <script src="./JS/Main.js"></script>
+    <script src="./JS/Theme.js"></script>
 </body>
 
 </html>
