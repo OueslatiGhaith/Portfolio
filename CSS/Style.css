@@ -29,7 +29,7 @@
     --first-color: #4070F4;
     --second-color: #ffffff;
     --background-color: #0E2431;
-    --shadow-color: rgba(250, 250, 250, .5);
+    --shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -347,13 +347,6 @@ img {
 }
 
 
-/* ------------------------------------------ CARDS ------------------------------------ */
-
-.cards__container {
-    row-gap: 2rem;
-}
-
-
 /* ------------------------------------------ SKILLS ----------------------------------- */
 
 .skills__container {
@@ -425,6 +418,13 @@ img {
 
 /* ------------------------------------------ CARDS ------------------------------------*/
 
+.cards__container {
+    row-gap: 2rem;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+}
+
 .cards__list {
     display: flex;
     padding: 3rem;
@@ -446,7 +446,7 @@ img {
     position: relative;
     flex-direction: column;
     height: 350px;
-    width: 400px;
+    width: 350px;
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -465,6 +465,30 @@ img {
 
 .card:not(:first-child) {
     margin-left: -130px;
+}
+
+.card-img-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    margin: 10rem 0 0;
+}
+
+.card-img img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 16px 10px;
+}
+
+.card-header:hover {
+    background: linear-gradient(90deg, var(--first-color), var(--second-color));
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -619,6 +643,10 @@ contact__button {
     }
     .contact__container {
         justify-items: center;
+    }
+    .cards__list {
+        align-items: center;
+        justify-content: center;
     }
 }
 
