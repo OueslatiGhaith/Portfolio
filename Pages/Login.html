@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/Style.css">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Login</title>
+    <link rel="icon" href="../IMG/Profil.png">
+</head>
+
+<body class="light">
+    <!-- Header -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="../Index.html" class="nav__logo">Ghaith</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../Index.html#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="../Index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="../Index.html#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="../Index.html#cards" class="nav__link">Cards</a></li>
+                    <li class="nav__item"><a href="../Index.html#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#" id="light" class="nav__link">light</a></li>
+                    <li class="nav__item"><a href="#" id="dark" class="nav__link">dark</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="../IMG/img-login.svg" alt="">
+            </div>
+
+            <div class="login__forms">
+                <form action="" class="login__register" id="login-in">
+                    <h2 class="login__title">Sign In</h2>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input"></input>
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input"></input>
+                    </div>
+
+                    <a href="#" class="login__forgot">Forgot password?</a>
+                    <a href="#" class="login__button">Sign In</a>
+
+                    <div>
+                        <span class="login__account">Don't have an account?</span>
+                        <span class="login__signin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+
+                <form action="" class="login__create" id="login-up">
+                    <h2 class="login__title">Create Account</h2>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input"></input>
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input"></input>
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input"></input>
+                    </div>
+
+                    <a href="#" class="login__button">Sign Up</a>
+
+                    <div>
+                        <span class="login__account">Already have an account?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll Reveal -->
+    <script src="../JS/scrollreveal.js"></script>
+    <!-- Main JS -->
+    <script src="../JS/Main.js"></script>
+    <script src="../JS/Theme.js"></script>
+    <script src="../JS/login.js"></script>
+</body>
+
+</html>

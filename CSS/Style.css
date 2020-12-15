@@ -470,9 +470,9 @@ img {
 .card-img-container {
     position: relative;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 125px 1fr;
     align-items: center;
-    margin: 10rem 0 0;
+    margin: 10rem 5rem 0;
 }
 
 .card-img img {
@@ -520,8 +520,55 @@ img {
 
 /* ------------------------------------------ CONTACT ----------------------------------*/
 
+.contact__container {
+    height: 60px;
+    width: 60px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    margin: auto;
+    font-size: var(--mb-4);
+    display: block;
+    cursor: pointer;
+    z-index: var(--z-fixed);
+}
+
+.contact__container:hover {
+    box-shadow: 0 10px 36px var(--shadow-color);
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.contact__icon {
+    position: relative;
+    top: 9px;
+    left: 14px;
+    color: var(--background-color);
+}
+
+.contact__items {
+    display: none;
+    height: 450px;
+    width: 350px;
+    min-width: 250px;
+    position: fixed;
+    z-index: var(--z-fixed);
+    padding: 1.5rem;
+    margin: auto;
+    bottom: 6rem;
+    right: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 25px var(--shadow-color);
+    animation-duration: .4s;
+    animation-name: animate-login;
+}
+
 .contact__input {
-    width: 100%;
+    width: 300px;
+    max-height: 10rem;
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi);
     padding: 1rem;
@@ -534,13 +581,21 @@ img {
     color: var(--second-color);
 }
 
-contact__button {
-    display: block;
+.contact__button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--background-color);
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
-    margin-left: auto;
+}
+
+.contact__button:hover {
+    box-shadow: 0 10px 36px var(--shadow-color);
 }
 
 
@@ -570,7 +625,164 @@ contact__button {
 }
 
 
+/* ------------------------------------------ LOGIN ------------------------------------*/
+
+.login {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.login__content {
+    display: grid;
+}
+
+.login__img {
+    justify-self: center;
+}
+
+.login__img img {
+    width: 310px;
+    margin-top: 2.5rem;
+}
+
+.login__forms {
+    position: relative;
+    height: 368px;
+}
+
+.login__register,
+.login__create {
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 25px var(--shadow-color);
+    animation-duration: .4s;
+    animation-name: animate-login;
+}
+
+.login__register {
+    display: block;
+}
+
+.login__create {
+    display: none;
+}
+
+@keyframes animate-login {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.login__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+    color: var(--first-color);
+}
+
+.login__box {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 0.5rem;
+    padding: 1.125rem 1rem;
+    background-color: var(--background-color);
+    margin-top: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 1px 4px var(--shadow-color)
+}
+
+.login__icon {
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+.login__input {
+    border: 1.5px none;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    color: var(--second-color);
+    background-color: var(--background-color);
+}
+
+.login__input::placeholder {
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    color: var(--second-color);
+}
+
+.login__forgot {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+    font-size: small;
+    font-weight: var(--font-semi);
+    color: var(--first-color);
+}
+
+.login__button {
+    display: block;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--first-color);
+    color: var(--background-color);
+    font-weight: var(--font-semi);
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.login__button:hover {
+    box-shadow: 0 10px 36px var(--shadow-color);
+}
+
+.login__account,
+.login__signin,
+.login__signup {
+    font-weight: var(--font-semi);
+    font-size: small;
+    color: var(--first-color);
+}
+
+.login__signin,
+.login__signup {
+    cursor: pointer;
+}
+
+.login__social {
+    margin-top: 2rem;
+}
+
+.login__social-icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin: 0 1.5rem;
+}
+
+
 /* ------------------------------------------ MEDIA QUERIES ----------------------------*/
+
+@media screen and (min-width: 576px) {
+    .login__forms {
+        width: 348px;
+        justify-self: center;
+    }
+}
 
 @media screen and (min-width: 768px) {
     body {
@@ -657,5 +869,36 @@ contact__button {
     }
     .home__img {
         right: 10%;
+    }
+    .login {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .login__content {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+    }
+    .login__img {
+        display: flex;
+        width: 600px;
+        height: 588px;
+        border-radius: 1rem;
+        padding-left: 1rem;
+    }
+    .login__img img {
+        width: 390px;
+        margin-top: 0;
+    }
+    .login__register,
+    .login__create {
+        left: -11rem;
+    }
+    .login__register {
+        bottom: -2rem;
+    }
+    .login__create {
+        bottom: -7.5rem;
     }
 }

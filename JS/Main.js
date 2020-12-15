@@ -56,9 +56,6 @@ sr.reveal('.cards__list', {})
 /*--- ------------------------------------------ SCROLL WORK ------------------------------------*/
 sr.reveal('.work__img', { interval: 200 })
 
-/*--- ------------------------------------------ SCROLL CONTACT ---------------------------------*/
-sr.reveal('.contact__input', { interval: 200 })
-
 /*--- ------------------------------------------ SCROLL FOOTER ----------------------------------*/
 sr.reveal('.footer__icon', { interval: 200 })
 
@@ -74,4 +71,19 @@ function move(e) {
 
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
+}
+
+/*--- ------------------------------------------ CONTACT POPUP ----------------------------------*/
+var contactItems = document.getElementById("contactPopUP");
+var contactButton = document.getElementById("contactButton");
+var contactIcon = document.getElementById("conctactIcon");
+
+contactButton.onclick = function() {
+    if (contactItems.style.display == "block") {
+        contactItems.style.display = "none"
+        contactIcon.classList = ('bx bxs-message-detail contact__icon')
+    } else {
+        contactItems.style.display = "block";
+        contactIcon.classList = ('bx bx-hide contact__icon');
+    }
 }

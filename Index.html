@@ -10,7 +10,8 @@
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Document</title>
+    <title>Ghaith Oueslati</title>
+    <link rel="icon" href="./IMG/Profil.png">
 </head>
 
 <body class="light">
@@ -18,7 +19,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Ghaith</a>
+                <a href="./Index.html" class="nav__logo">Ghaith</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -28,7 +29,6 @@
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#cards" class="nav__link">Cards</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     <li class="nav__item"><a href="#" id="light" class="nav__link">light</a></li>
                     <li class="nav__item"><a href="#" id="dark" class="nav__link">dark</a></li>
                 </ul>
@@ -47,7 +47,7 @@
             <div class="home__data">
                 <h1 class="home__title">Hi, <br>I'm <span class="home__title-color">Ghaith</span>,<br> Engineering Student
                 </h1>
-                <a href="#contact" class="button">Contact</a>
+                <a href="./Pages/Login.html" class="button">Login</a>
             </div>
 
             <div class="home__social">
@@ -58,8 +58,8 @@
             </div>
 
             <div class="home__img">
-                <img src="./IMG/Profil UP.png" alt="" data-speed="1.5" class="move">
-                <img src="./IMG/Profil DOWN.png" alt="" data-speed="-1.5" class="move">
+                <img src="./IMG/Profil UP.png" alt="LOGO" data-speed="1.5" class="move">
+                <img src="./IMG/Profil DOWN.png" alt="LOGO" data-speed="-1.5" class="move">
             </div>
         </section>
 
@@ -69,7 +69,7 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="./IMG/About.jpeg" alt="">
+                    <img src="./IMG/About.jpeg" alt="Ghaith Oueslati">
                 </div>
                 <div>
                     <h2 class="about__subtitle">I'm Ghaith</h2>
@@ -218,19 +218,18 @@
         </section>
 
         <!-- ------------------------------------------ CONTACT ------------------------------------>
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+        <div class="contact__container" id="contactButton">
+            <i class='bx bxs-message-detail contact__icon' id="conctactIcon"></i>
+        </div>
+        <div class="contact__items" id="contactPopUP">
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
 
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                    <input type="button" value="Send" class="contact__button button">
-                </form>
-            </div>
-        </section>
+                <input type="button" value="Send" class="contact__button">
+            </form>
+        </div>
         <!-- ------------------------------------------ FOOTER ------------------------------------->
         <footer class="footer">
             <p class="footer__title">Ghaith Oueslati</p>
