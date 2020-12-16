@@ -87,3 +87,22 @@ contactButton.onclick = function() {
         contactIcon.classList = ('bx bx-hide contact__icon');
     }
 }
+
+/* Send Alert */
+var alertBar = document.getElementById("alert");
+var SendBtn = document.getElementById("send-button");
+var alertCloseBtn = document.getElementById("alert-close-button");
+
+SendBtn.onclick = function() {
+    alertBar.classList.replace("hide", "show");
+    alertBar.classList.add("showAlert");
+    console.log(alertBar.classList)
+}
+alertCloseBtn.onclick = function() {
+    alertBar.classList.replace("show", "hide");
+}
+
+/* auto hide alert */
+setTimeout(function() {
+    alertBar.classList.replace("show", "hide");
+}, 5000);

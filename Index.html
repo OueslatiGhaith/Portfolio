@@ -197,22 +197,22 @@
 
             <div class="work__container bd-grid">
                 <div class="work__img">
-                    <img src="./IMG/About.jpeg" alt="">
+                    <img src="./IMG/work1.jpg" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./IMG/Work2.jgp" alt="">
+                    <img src="./IMG/work2.jpg" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./IMG/Work3.jgp" alt="">
+                    <img src="./IMG/work3.jpg" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./IMG/Work4.jgp" alt="">
+                    <img src="./IMG/work4.jpg" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./IMG/Work5.jgp" alt="">
+                    <img src="./IMG/work5.jpg" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./IMG/Work6.jgp" alt="">
+                    <img src="./IMG/work6.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -222,14 +222,23 @@
             <i class='bx bxs-message-detail contact__icon' id="conctactIcon"></i>
         </div>
         <div class="contact__items" id="contactPopUP">
-            <form action="" class="contact__form">
+            <form action="" class="contact__form" method="POST">
                 <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
+                <input type="email" placeholder="Email" class="contact__input">
                 <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
 
-                <input type="button" value="Send" class="contact__button">
+                <input type="button" value="Send" class="contact__button" id="send-button">
             </form>
         </div>
+        <!-- Alert -->
+        <div class="alert hide" id="alert">
+            <i class='bx bxs-message-check alert__icon'></i>
+            <span class="alert__message">Message Sent!</span>
+            <span class="alert__close-button" id="alert-close-button">
+            <i class='bx bx-x'></i>
+        </span>
+        </div>
+
         <!-- ------------------------------------------ FOOTER ------------------------------------->
         <footer class="footer">
             <p class="footer__title">Ghaith Oueslati</p>
