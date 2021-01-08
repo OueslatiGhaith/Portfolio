@@ -1,264 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/Style.css" />
 
     <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Ghaith Oueslati</title>
-    <link rel="icon" href="./IMG/Profil.png">
-</head>
+    <link rel="icon" href="./IMG/Profil.png" />
+  </head>
 
-<body class="light">
+  <body class="light">
     <!-- Header -->
     <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="./Index.html" class="nav__logo">Ghaith</a>
-            </div>
+      <nav class="nav bd-grid">
+        <div>
+          <a href="./Index.html" class="nav__logo">Ghaith</a>
+        </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#cards" class="nav__link">Cards</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#" id="light" class="nav__link">light</a></li>
-                    <li class="nav__item"><a href="#" id="dark" class="nav__link">dark</a></li>
-                </ul>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#cards" class="nav__link">Cards</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="light" class="nav__link">light</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="dark" class="nav__link">dark</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
-
+    <!-- comment  abc abc
+    sfqfsq -->
     <main class="l-main">
-        <!-- ------------------------------------------ HOME --------------------------------------->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi, <br>I'm <span class="home__title-color">Ghaith</span>,<br> Engineering Student
-                </h1>
-                <a href="./Pages/Login.html" class="button">Login</a>
-            </div>
-
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/oueslati-ghaith-8405091b2/" target="blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.facebook.com/Ghaith.Oueslati.0" target="blank" class="home__social-icon"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://github.com/OueslatiGhaith" class="home__social-icon" target="blank"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="home__img">
-                <img src="./IMG/Profil UP.png" alt="LOGO" data-speed="1.5" class="move">
-                <img src="./IMG/Profil DOWN.png" alt="LOGO" data-speed="-1.5" class="move">
-            </div>
-        </section>
-
-        <!-- ------------------------------------------ ABOUT -------------------------------------->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="./IMG/About.jpeg" alt="Ghaith Oueslati">
-                </div>
-                <div>
-                    <h2 class="about__subtitle">I'm Ghaith</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit molestias sit deserunt reprehenderit? Consectetur quia magnam modi, nihil dolorum, ad vero a ea illo necessitatibus nemo placeat nulla ipsum.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ------------------------------------------ SKILLS ------------------------------------->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
-                        </div>
-                        <div class="skills__bar skills__html">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">95%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__bar skills__css">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JAVASCRIPT</span>
-                        </div>
-                        <div class="skills__bar skills__js">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="./IMG/Work3.jpg" alt="" class="skills__img">
-                </div>
-            </div>
-        </section>
-
-        <!-- ------------------------------------------ CARDS -------------------------------------->
-        <section class="cards__container section" id="cards">
-            <h2 class="section-title">Voluneteer Work</h2>
-
-            <div class="cards__list">
-                <div class="card">
-                    <header class="card-header">
-                        <p>MTC ENIS</p>
-                        <h2>Designer</h2>
-                    </header>
-                    <div class="card-img-container">
-                        <img src="./IMG/Clubs/MTC.png" alt="Microsoft Tech Club ENIS" class="card-img">
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <header class="card-header">
-                        <p>IEEE ENIS SB</p>
-                        <h2>Member</h2>
-                    </header>
-                    <div class="card-img-container">
-                        <img src="./IMG/Clubs/IEEE.png" alt="IEEE ENIS SB" class="card-img">
-                    </div>
-                </div>
-
-                <div class="card">
-                    <header class="card-header">
-                        <p>IRIS JE</p>
-                        <h2>Project Team Member</h2>
-                    </header>
-                    <div class="card-img-container">
-                        <img src="./IMG/Clubs/IRIS.png" alt="IRIS Junior Enterprise" class="card-img">
-                    </div>
-                </div>
-
-                <div class="card">
-                    <header class="card-header">
-                        <p>GDG Sfax</p>
-                        <h2>Member</h2>
-                    </header>
-                    <div class="card-img-container">
-                        <img src="./IMG/Clubs/GDG.png" alt="IRIS Junior Enterprise" class="card-img">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ------------------------------------------ WORK --------------------------------------->
-        <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
-
-            <div class="work__container bd-grid">
-                <div class="work__img">
-                    <img src="./IMG/work1.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="./IMG/work2.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="./IMG/work3.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="./IMG/work4.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="./IMG/work5.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="./IMG/work6.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- ------------------------------------------ CONTACT ------------------------------------>
-        <div class="contact__container" id="contactButton">
-            <i class='bx bxs-message-detail contact__icon' id="conctactIcon"></i>
+      <!-- ------------------------------------------ HOME --------------------------------------->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi, <br />I'm <span class="home__title-color">Ghaith</span>,<br />
+            Engineering Student
+          </h1>
+          <a href="./Pages/Login.html" class="button">Login</a>
         </div>
-        <div class="contact__items" id="contactPopUP">
-            <form action="" class="contact__form" method="POST">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="email" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
 
-                <input type="button" value="Send" class="contact__button" id="send-button">
-            </form>
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/oueslati-ghaith-8405091b2/"
+            target="blank"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/Ghaith.Oueslati.0"
+            target="blank"
+            class="home__social-icon"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://github.com/OueslatiGhaith"
+            class="home__social-icon"
+            target="blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
-        <!-- Alert -->
-        <div class="alert hide" id="alert">
-            <i class='bx bxs-message-check alert__icon'></i>
-            <span class="alert__message">Message Sent!</span>
-            <span class="alert__close-button" id="alert-close-button">
-            <i class='bx bx-x'></i>
+
+        <div class="home__img">
+          <img
+            src="./IMG/Profil UP.png"
+            alt="LOGO"
+            data-speed="1.5"
+            class="move"
+          />
+          <img
+            src="./IMG/Profil DOWN.png"
+            alt="LOGO"
+            data-speed="-1.5"
+            class="move"
+          />
+        </div>
+      </section>
+
+      <!-- ------------------------------------------ ABOUT -------------------------------------->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./IMG/About.jpeg" alt="Ghaith Oueslati" />
+          </div>
+          <div>
+            <h2 class="about__subtitle">I'm Ghaith</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              fugit molestias sit deserunt reprehenderit? Consectetur quia
+              magnam modi, nihil dolorum, ad vero a ea illo necessitatibus nemo
+              placeat nulla ipsum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------ SKILLS ------------------------------------->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+              optio id vero amet, alias architecto consectetur error eum eaque
+              sit.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./IMG/Work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------ CARDS -------------------------------------->
+      <section class="cards__container section" id="cards">
+        <h2 class="section-title">Voluneteer Work</h2>
+
+        <div class="cards__list">
+          <div class="card">
+            <header class="card-header">
+              <p>MTC ENIS</p>
+              <h2>Designer</h2>
+            </header>
+            <div class="card-img-container">
+              <img
+                src="./IMG/Clubs/MTC.png"
+                alt="Microsoft Tech Club ENIS"
+                class="card-img"
+              />
+            </div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p>IEEE ENIS SB</p>
+              <h2>Member</h2>
+            </header>
+            <div class="card-img-container">
+              <img
+                src="./IMG/Clubs/IEEE.png"
+                alt="IEEE ENIS SB"
+                class="card-img"
+              />
+            </div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p>IRIS JE</p>
+              <h2>Project Team Member</h2>
+            </header>
+            <div class="card-img-container">
+              <img
+                src="./IMG/Clubs/IRIS.png"
+                alt="IRIS Junior Enterprise"
+                class="card-img"
+              />
+            </div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p>GDG Sfax</p>
+              <h2>Member</h2>
+            </header>
+            <div class="card-img-container">
+              <img
+                src="./IMG/Clubs/GDG.png"
+                alt="IRIS Junior Enterprise"
+                class="card-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------ WORK --------------------------------------->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <a
+              href="https://github.com/OueslatiGhaith/Portfolio"
+              target="blank"
+            >
+              <img src="./IMG/work1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="work__img">
+            <img src="./IMG/work2.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="./IMG/work3.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="./IMG/work4.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="./IMG/work5.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="./IMG/work6.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------ CONTACT ------------------------------------>
+      <div class="contact__container" id="contactButton">
+        <i class="bx bxs-message-detail contact__icon" id="conctactIcon"></i>
+      </div>
+      <div class="contact__items" id="contactPopUP">
+        <form action="" class="contact__form" method="POST">
+          <input type="text" placeholder="Name" class="contact__input" />
+          <input type="email" placeholder="Email" class="contact__input" />
+          <textarea
+            name=""
+            id=""
+            cols="0"
+            rows="7"
+            class="contact__input"
+          ></textarea>
+
+          <input
+            type="button"
+            value="Send"
+            class="contact__button"
+            id="send-button"
+          />
+        </form>
+      </div>
+      <!-- Alert -->
+      <div class="alert hide" id="alert">
+        <i class="bx bxs-message-check alert__icon"></i>
+        <span class="alert__message">Message Sent!</span>
+        <span class="alert__close-button" id="alert-close-button">
+          <i class="bx bx-x"></i>
         </span>
+      </div>
+
+      <!-- ------------------------------------------ FOOTER ------------------------------------->
+      <footer class="footer">
+        <p class="footer__title">Ghaith Oueslati</p>
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/Ghaith.Oueslati.0"
+            class="footer__icon"
+            target="blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/oueslati_ghaith/"
+            class="footer__icon"
+            target="blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.messenger.com/t/Ghaith.Oueslati.0"
+            class="footer__icon"
+            target="blank"
+            ><i class="bx bxl-messenger"></i
+          ></a>
         </div>
-
-        <!-- ------------------------------------------ FOOTER ------------------------------------->
-        <footer class="footer">
-            <p class="footer__title">Ghaith Oueslati</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/Ghaith.Oueslati.0" class="footer__icon" target="blank"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/oueslati_ghaith/" class="footer__icon" target="blank"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://www.messenger.com/t/Ghaith.Oueslati.0" class="footer__icon" target="blank"><i
-                        class='bx bxl-messenger'></i></a>
-            </div>
-        </footer>
+      </footer>
     </main>
-
 
     <!-- Scroll Reveal -->
     <script src="./JS/scrollreveal.js"></script>
     <!-- Main JS -->
     <script src="./JS/Main.js"></script>
     <script src="./JS/Theme.js"></script>
-</body>
-
+  </body>
 </html>
